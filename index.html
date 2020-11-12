@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./favicon_io/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffino</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <!-- Navigation starts here -->
+  <nav class="sticky">
+    <div class="wrapper navContainer">
+      <div class="logoContainer">
+        <a href="#" class="logo">
+          <img src="./assets/logo_with_beans.png" alt="Coffino logo with beans" class="beans">
+          <img src="./assets/logo_without_beans.png" alt="Coffino logo without beans" class="noBeans">
+        </a>
+      </div>
+      <!-- Mobile toggle -->
+      <div class="menuToggle" id="menuToggle">
+        <span>Menu</span>
+      </div>
+      <ul class="menu">
+        <li>
+          <!-- Dropdown menu -->
+          <div class="dropdown">
+            <a href="#" class="dropdownLink link">About</a>
+            <div class="dropdownContent">
+              <ul>
+                <li>
+                  <a href="#">Company Overview</a>
+                </li>
+                <li>
+                  <a href="#">Company Values</a>
+                </li>
+                <li>
+                  <a href="#">Our Story</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="link">Products</a>
+        </li>
+        <li>
+          <a href="#" class="link">Customers</a>
+        </li>
+        <span class="loginFlag">
+          <li>
+            <a href="#" class="link">Login</a>
+          </li>
+          <li>
+            <a href="#" class="flag link">
+              <div class="flagContainer">
+                <img src="./assets/canada_plag.png" alt="Canadian page and currency">
+              </div>
+            </a>
+          </li>
+        </span>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navigation ends here -->
+  <!-- Header starts here -->
+  <header>
+    <div class="wrapper headerContainer">
+      <div class="headerContents">
+        <h1>The World's
+          <span class="italicRed">Best</span>
+          <span class="lineBreak">Coffee Subscription Service</span>
+        </h1>
+        <!-- Subscription form starts here-->
+        <!-- action="URL" (relative or absolute) - to process input -->
+        <form action="" method="get">
+          <label for="email">Your email here</label>
+          <input type="text" id="email" name="email" placeholder="Your email here">
+          <input type="submit" value="Sign Up Now">
+        </form>
+        <!-- Subscription form ends here-->
+      </div>
+    </div>
+    <div class="bgImgContainer">
+      <img src="./assets/hero_image_full_width.png"
+        alt="Coffee being poured into a cup on a table set with its condiments and accessories">
+    </div>
+    <div class="bgImgContainerMobile">
+      <img src="./assets/hero_image _half_width.png"
+        alt="Coffee being poured into a cup on a table set with its condiments and accessories">
+    </div>
+  </header>
+  <!-- Header ends here -->
+  <!-- Section starts here -->
+  <section>
+    <div class="wrapper">
+      <div class="mobileLinks">
+        <!-- This could also be a button - depending if intention is to populate a modal -->
+        <a href="#" class="signUpLink">Sign Up Now</a>
+        <a href="#" class="shopNowLink">Shop Now</a>
+      </div>
+      <ul class="logoGalleryContainer">
+        <!-- A&W logo -->
+        <li>
+          <a href="https://web.aw.ca/" target="_blank">
+            <img src="./assets/client logos/A&W_Canada_Logo.png" alt="A&W logo">
+          </a>
+        </li>
+        <!-- Wendy's Logo -->
+        <li>
+          <a href="https://www.wendys.com/en-ca/home" target="_blank">
+            <img src="./assets/client logos/wendys.png" alt="Wendy's logo">
+          </a>
+        </li>
+        <!-- Tim Horton's logo -->
+        <li>
+          <a href="https://www.timhortons.com/" target="_blank">
+            <img src="./assets/client logos/tim-hortons-logo.png" alt="Tim Horton's logo">
+          </a>
+        </li>
+        <!-- Second Cup's logo -->
+        <li>
+          <a href="https://secondcup.com/" target="_blank">
+            <img src="./assets/client logos/Second_cup_logo15.png" alt="Second Cup's logo">
+          </a>
+        </li>
+        <!-- Burger King's logo -->
+        <li>
+          <a href="https://www.bk.com/" target="_blank">
+            <img src="./assets/client logos/burger-king-logo.png" alt="Burger King's logo">
+          </a>
+        </li>
+        <!-- McDonald's logo -->
+        <li>
+          <a href="https://www.mcdonalds.com/ca/en-ca.html" target="_blank">
+            <img src="./assets/client logos/mcdonalds.png" alt="McDonald's Logo">
+          </a>
+        </li>
+      </ul>
+      <h2>Our Coffee Beans</h2>
+    </div>
+  </section>
+  <!-- Section ends here -->
+</body>
+<footer>
+  &copy; 2020
+</footer>
+
+</html>
