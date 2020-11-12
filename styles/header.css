@@ -1,0 +1,88 @@
+/* Header styling */
+header {
+  height: 57vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerContents {
+  position: absolute;
+  top: 30%;
+  width: 517px;
+}
+
+.bgImgContainerMobile {
+  display: none;
+}
+
+.bgImgContainer {
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+header img {
+  max-height: 550px;
+  min-width: 100%;
+}
+
+.italicRed {
+  font-style: italic;
+  color: var(--complimentary-red);
+}
+
+.lineBreak {
+  display: block;
+}
+
+form {
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+  width: 400px;
+}
+
+input {
+  border-radius: 100px;
+  border: none;
+}
+
+input[type="text"] {
+  width: 400px;
+  padding: 15px 20px;
+  border: 1px solid var(--main-brown);
+  transition: filter 0.3s ease-in-out;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="text"]:active {
+  filter: drop-shadow(0 0 0.5rem var(--complimentary-red));
+}
+
+input[type="submit"] {
+  position: absolute;
+  right: 2%;
+  top: 11%;
+  padding: 10px 20px;
+  background-color: var(--complimentary-red);
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:active {
+  color: var(--complimentary-red);
+  background-color: var(--link-white);
+  filter: drop-shadow(0 0 0.5rem var(--complimentary-red));
+}
+
+/* Label not visible to users, still visible for screen readers - accessibility */
+label {
+  position: absolute;
+  left: -1000px;
+}

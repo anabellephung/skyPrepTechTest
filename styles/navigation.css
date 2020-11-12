@@ -1,0 +1,164 @@
+/* Navigation styling */
+nav {
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menuToggle {
+  display: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuToggle:hover,
+.menuToggle:focus,
+.menuToggle:active {
+  background-color: var(--hover-beige);
+  color: var(--complimentary-red);
+  border-radius: 4px;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 92%;
+  right: 0;
+  top: 8%;
+  background: var(--main-bg-color);
+  opacity: 0.95;
+}
+
+.sticky {
+  background-color: var(--main-bg-color);
+	position: -webkit-sticky;
+	position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  width: 212px;
+  height: 32px;
+  align-self: center;
+}
+
+.logoContainer img {
+  border-radius: 4px;
+}
+
+.noBeans {
+  display: none;
+}
+
+.logo {
+  padding: 0;
+  transition: filter 0.3s ease-in-out;
+}
+
+.logo:hover,
+.logo:focus,
+.logo:active {
+  filter: drop-shadow(0 0 0.5rem var(--complimentary-red));
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  font-size: 1.8rem;
+  padding: 5px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  background-color: var(--hover-beige);
+  color: var(--complimentary-red);
+  border-radius: 4px;
+}
+
+.link {
+  margin: 0 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: var(--complimentary-red);
+  width: 135px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.dropdownContent a {
+  font-size: 1.4rem;
+  display: block;
+  padding: 5px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdownContent a:hover,
+.dropdownContent a:focus,
+.dropdownContent a:active {
+  border-radius: 0;
+  text-decoration: underline;
+}
+
+.dropdownContent ul{
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.dropdown:hover .dropdownContent,
+.dropdown:focus .dropdownContent,
+.dropdown:active .dropdownContent {
+  display: block;
+}
+
+.flagContainer {
+  width: 41px;
+  height: 19px;
+  margin-left: 5px;
+}
+
+.flag {
+  padding: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.flag:hover,
+.flag:focus,
+.flag:active {
+  opacity: 0.5;
+}
+
+.loginFlag {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 30px;
+}
