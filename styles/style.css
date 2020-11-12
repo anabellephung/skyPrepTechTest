@@ -1,1 +1,32 @@
 @import './setup.css';
+@import './navigation.css';
+@import './header.css';
+@import './section.css';
+
+/* General Styling */
+h1,
+h2 {
+  font-size: clamp(3.2rem, 3vw, 4.8rem);
+  line-height: 7.2rem;
+}
+
+a,
+input {
+  font-family: inherit;
+  font-size: 2rem;
+  color: inherit;
+  cursor: pointer;
+}
+
+header input[type='submit'],
+.dropdownContent a {
+  color: var(--link-white);
+}
+
+/* Footer styling */
+footer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

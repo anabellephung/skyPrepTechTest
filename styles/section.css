@@ -1,0 +1,68 @@
+/* Section styling */
+section {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mobileLinks {
+  display: none;
+}
+
+.signUpLink, 
+.shopNowLink {
+  width: 100%;
+  text-align: center;
+  margin: 5px 0;
+  padding: 5px 15px;
+  border: 1px solid var(--complimentary-red);
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.signUpLink {
+  background-color: var(--complimentary-red);
+  color: var(--link-white);
+}
+
+.signUpLink:hover,
+.signUpLink:focus,
+.signUpLink:active {
+  color: var(--complimentary-red);
+  background-color: var(--link-white);
+  filter: drop-shadow(0 0 0.5rem var(--complimentary-red));
+}
+
+.shopNowLink {
+  background-color: var(--link-white);
+  color: var(--complimentary-red);
+}
+
+.shopNowLink:hover,
+.shopNowLink:focus,
+.shopNowLink:active {
+  color: var(--link-white);
+  background-color: var(--complimentary-red);
+  filter: drop-shadow(0 0 0.5rem var(--link-white));
+}
+
+.logoGalleryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logoGalleryContainer li {
+  margin: 10px 35px;
+}
+
+.logoGalleryContainer img {
+  max-width: 150px;
+  max-height: 50px;
+}
+
+h2 {
+  text-align: center;
+}
