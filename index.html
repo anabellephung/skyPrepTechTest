@@ -146,9 +146,20 @@
     </div>
   </section>
   <!-- Section ends here -->
+  <!-- Footer starts here -->
+  <footer>
+    &copy; 2020
+  </footer>
+  <!-- Footer ends here -->
+  <script src='https://code.jquery.com/jquery-3.4.0.min.js'
+    integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+  <script>
+    $(function () {
+      // Menu toggle for mobile
+      $('#menuToggle').on('click', function () {
+        $('.menu').toggleClass('toggle');
+      })
+    });
+  </script>
 </body>
-<footer>
-  &copy; 2020
-</footer>
-
 </html>
